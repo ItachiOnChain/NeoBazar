@@ -4,7 +4,7 @@ import { BsCircleFill } from "react-icons/bs";
 
 //INTERNAL IMPORT
 import Style from "./Category.module.css";
-import images from "../../img";
+import images from "../../public/img";
 
 const Category = () => {
   const CategoryArray = [

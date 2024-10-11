@@ -7,7 +7,7 @@ import Link from "next/link";
 
 //INTERNAL IMPORT
 import Style from "./Profile.module.css";
-import images from "../../../img";
+import images from "../../../public/img";
 
 const Profile = ({ currentAccount }) => {
   return (

@@ -5,7 +5,7 @@ import { TiArrowLeftThick, TiArrowRightThick } from "react-icons/ti";
 //INTERNAL IMPORT
 import Style from "./Slider.module.css";
 import SliderCard from "./SliderCard/SliderCard";
-import images from "../../img";
+import images from "../../public/img";
 
 const Slider = () => {
   const FollowingArray = [

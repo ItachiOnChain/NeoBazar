@@ -5,7 +5,7 @@ import { useRouter } from "next/router.js";
 
 //INTERNAL IMPORT
 import Style from "./Brand.module.css";
-import images from "../../img/index.js";
+import images from "../../public/img/index.js";
 import { Button } from "../componentsindex.js";
 
 const Brand = () => {

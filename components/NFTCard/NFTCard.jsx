@@ -6,7 +6,7 @@ import Link from "next/link";
 
 //INTERNAL IMPORT
 import Style from "./NFTCard.module.css";
-import images from "../../img";
+import images from "../../public/img";
 
 const NFTCard = ({ NFTData }) => {
   // const CardArray = [

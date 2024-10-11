@@ -3,7 +3,7 @@ import Image from "next/image";
 
 //INTERNAL IMPORT
 import Style from "./Service.module.css";
-import images from "../../img";
+import images from "../../public/img";
 const Service = () => {
   return (
     <div className={Style.service}>

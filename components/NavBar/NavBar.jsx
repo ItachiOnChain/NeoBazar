@@ -12,7 +12,7 @@ import { useRouter } from "next/router";
 import Style from "./NavBar.module.css";
 import { Discover, HelpCenter, Notification, Profile, SideBar } from "./index";
 import { Button, Error } from "../componentsindex";
-import images from "../../img";
+import images from "../../public/img";
 
 //IMPORT FROM SMART CONTRACT
 import { NFTMarketplaceContext } from "../../Context/NFTMarketplaceContext";

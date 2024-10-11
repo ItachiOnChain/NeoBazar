@@ -4,7 +4,7 @@ import { useDropzone } from "react-dropzone";
 
 //INTERNAL IMPORT
 import Style from "../styles/account.module.css";
-import images from "../img";
+import images from "../public/img";
 import From from "../AccountPage/Form/Form";
 
 const account = () => {

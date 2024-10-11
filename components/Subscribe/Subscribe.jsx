@@ -4,7 +4,7 @@ import Image from "next/image";
 
 //INTERNAL IMPORT
 import Style from "./Subscribe.module.css";
-import images from "../../img";
+import images from "../../public/img";
 
 const Subscribe = () => {
   return (

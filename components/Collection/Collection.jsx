@@ -8,7 +8,7 @@ import {
 //INTERNAL IMPORT
 import Style from "./Collection.module.css";
 import DaysComponent from "./DaysComponents/DaysComponents";
-import images from "../../img";
+import images from "../../public/img";
 
 const Collection = () => {
   const [popular, setPopular] = useState(true);

@@ -4,7 +4,7 @@ import { TbPlayerPlay, TbPlayerPause } from "react-icons/tb";
 
 //INTERNAL IMPORT
 import Style from "./AudioCardSmall.module.css";
-import images from "../../../img";
+import images from "../../../public/img";
 import LikeProfile from "../../LikeProfile/LikeProfile";
 
 const AudioCardSmall = () => {

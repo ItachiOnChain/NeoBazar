@@ -19,7 +19,7 @@ import {
   Video,
   Loader,
 } from "../components/componentsindex";
-import { getTopCreators } from "../TopCreators/TopCreators";
+import { getTopCreators } from "../components/TopCreators/TopCreators";
 
 //IMPORTING CONTRCT DATA
 import { NFTMarketplaceContext } from "../Context/NFTMarketplaceContext";

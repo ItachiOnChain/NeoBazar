@@ -4,7 +4,7 @@ import { MdVerified } from "react-icons/md";
 
 //INTERNAL IMPORT
 import Style from "./DaysComponents.module.css";
-import images from "../../../img";
+import images from "../../../public/img";
 
 const DaysComponents = ({ el, i }) => {
   return (

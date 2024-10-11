@@ -8,7 +8,7 @@ import {
 //INTERNAL IMPORT
 import Style from "./FollowerTab.module.css";
 import FollowerTabCard from "./FollowerTabCard/FollowerTabCard";
-import images from "../../img";
+import images from "../../public/img";
 
 const FollowerTab = ({ TopCreator }) => {
   // const CardArray = [

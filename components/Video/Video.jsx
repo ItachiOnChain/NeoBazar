@@ -3,7 +3,7 @@ import Image from "next/image";
 
 //INTERNALIMPORT
 import Style from "./Video.module.css";
-import images from "../../img";
+import images from "../../public/img";
 
 const Video = () => {
   return (
