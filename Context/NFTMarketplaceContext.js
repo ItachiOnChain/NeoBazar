@@ -3,6 +3,8 @@ import Web3Modal from "web3modal";
 import { ethers } from "ethers";
 import { useRouter } from "next/router";
 import axios from "axios";
+import dotenv from "dotenv";
+dotenv.config();
 
 //INTERNAL  IMPORT
 import {
