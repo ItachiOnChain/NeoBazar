@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 
 //INTERNAL IMPORT
 import { Button} from "../components/componentsindex";
-import NFTDetailsPage from "../NFTDetailsPage/NFTDetailsPage";
+import NFTDetailsPage from "../components/NFTDetailsPage/NFTDetailsPage";
 
 //IMPORT SMART CONTRACT DATA
 import { NFTMarketplaceContext } from "../Context/NFTMarketplaceContext";
