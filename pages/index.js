@@ -8,13 +8,9 @@ import {
   BigNFTSilder,
   Subscribe,
   Title,
-  Category,
   Filter,
   NFTCard,
-  Collection,
-  AudioLive,
   FollowerTab,
-  Slider,
   Brand,
   Video,
   Loader,
@@ -55,19 +51,12 @@ const Home = () => {
       <HeroSection />
       <Service />
       <BigNFTSilder />
-      <Title
-        heading="Audio Collection"
-        paragraph="Discover the most outstanding NFTs in all topics of life."
-      />
-      <AudioLive />
       {creators.length === 0 ? (
         <Loader />
       ) : (
         <FollowerTab TopCreator={creators} />
       )}
 
-      <Slider />
-      <Collection />
       <Title
         heading="Featured NFTs"
         paragraph="Discover the most outstanding NFTs in all topics of life."
@@ -75,11 +64,6 @@ const Home = () => {
       <Filter />
       {nfts.length === 0 ? <Loader /> : <NFTCard NFTData={nfts} />}
 
-      <Title
-        heading="Browse by category"
-        paragraph="Explore the NFTs in the most featured categories."
-      />
-      <Category />
       <Subscribe />
       <Brand />
       <Video />
