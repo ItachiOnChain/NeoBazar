@@ -21,13 +21,14 @@ import {
 } from "../components/componentsindex";
 import { getTopCreators } from "../components/TopCreators/TopCreators";
 
-//IMPORTING CONTRCT DATA
+//IMPORTING CONTRACT DATA
 import { NFTMarketplaceContext } from "../Context/NFTMarketplaceContext";
 
 const Home = () => {
   const { checkIfWalletConnected, currentAccount } = useContext(
     NFTMarketplaceContext
   );
+  
   useEffect(() => {
     checkIfWalletConnected();
   }, []);
@@ -39,17 +40,15 @@ const Home = () => {
   useEffect(() => {
     if (currentAccount) {
       fetchNFTs().then((items) => {
-        console.log(nfts);
-        setNfts(items?.reverse());
-        setNftsCopy(items);
+        console.log(items);
+        setNfts(items?.reverse() || []); // Ensure nfts is always an array
+        setNftsCopy(items || []); // Ensure nftsCopy is always an array
       });
     }
   }, [currentAccount]);
 
   //CREATOR LIST
-
-  const creators = getTopCreators(nfts);
-  // console.log(creators);
+  const creators = getTopCreators(nfts || []); // Safely pass nfts array
 
   return (
     <div className={Style.homePage}>
@@ -61,7 +60,7 @@ const Home = () => {
         paragraph="Discover the most outstanding NFTs in all topics of life."
       />
       <AudioLive />
-      {creators.length == 0 ? (
+      {creators.length === 0 ? (
         <Loader />
       ) : (
         <FollowerTab TopCreator={creators} />
@@ -74,7 +73,7 @@ const Home = () => {
         paragraph="Discover the most outstanding NFTs in all topics of life."
       />
       <Filter />
-      {nfts.length == 0 ? <Loader /> : <NFTCard NFTData={nfts} />}
+      {nfts.length === 0 ? <Loader /> : <NFTCard NFTData={nfts} />}
 
       <Title
         heading="Browse by category"

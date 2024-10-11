@@ -1,11 +1,15 @@
 export const getTopCreators = (creators) => {
+  if (!Array.isArray(creators) || creators.length === 0) {
+    // Return an empty array if creators is not an array or if it's empty
+    return [];
+  }
+
   const finalCreators = [];
 
   const finalResults = creators.reduce((index, currentValue) => {
-    (index[currentValue.seller] = index[currentValue.seller] || []).push(
-      currentValue
-    );
-
+    if (currentValue && currentValue.seller && currentValue.price) {
+      (index[currentValue.seller] = index[currentValue.seller] || []).push(currentValue);
+    }
     return index;
   }, {});
 
