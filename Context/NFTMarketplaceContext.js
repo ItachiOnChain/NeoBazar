@@ -13,6 +13,11 @@ import {
   handleNetworkSwitch,
 } from "./constants";
 
+//---SETTING UP PINATA API
+const pinataApiKey = process.env.NEXT_PUBLIC_PINATA_API_KEY;
+const pinataSecretApiKey = process.env.NEXT_PUBLIC_PINATA_SECRET_API_KEY;
+
+
 //---FETCHING SMART CONTRACT
 const fetchContract = (signerOrProvider) =>
   new ethers.Contract(
@@ -112,8 +117,8 @@ export const NFTMarketplaceProvider = ({ children }) => {
           url: "https://api.pinata.cloud/pinning/pinFileToIPFS",
           data: formData,
           headers: {
-            pinata_api_key: `76f93a8f4b475c393dbd`,
-            pinata_secret_api_key: `16d468a9836fbd5f2191f1969e7ab83478f737546ba675c22f2686c48b13808a`,
+            pinata_api_key: pinataApiKey,
+            pinata_secret_api_key: pinataSecretApiKey,
             "Content-Type": "multipart/form-data",
           },
         });
@@ -171,11 +176,11 @@ export const NFTMarketplaceProvider = ({ children }) => {
 
       const transaction = !isReselling
         ? await contract.createToken(url, price, {
-            value: listingPrice.toString(),
-          })
+          value: listingPrice.toString(),
+        })
         : await contract.resellToken(id, price, {
-            value: listingPrice.toString(),
-          });
+          value: listingPrice.toString(),
+        });
 
       await transaction.wait();
       console.log(transaction);
