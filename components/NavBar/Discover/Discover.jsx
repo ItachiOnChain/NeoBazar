@@ -16,8 +16,8 @@ const Discover = () => {
       link: "searchPage",
     },
     {
-      name: "Account Setting",
-      link: "account",
+      name: "Author Profile",
+      link: "author",
     },
     {
       name: "Upload NFT",

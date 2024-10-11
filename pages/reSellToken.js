@@ -5,7 +5,7 @@ import Image from "next/image";
 
 //INTERNAL IMPORT
 import Style from "../styles/reSellToken.module.css";
-import formStyle from "../AccountPage/Form/Form.module.css";
+import formStyle from "../components/AccountPage/Form/Form.module.css";
 import { Button } from "../components/componentsindex";
 
 //IMPORT SMART CONTRACT
