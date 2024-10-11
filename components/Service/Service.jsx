@@ -20,7 +20,7 @@ const Service = () => {
           </p>
           <h3>Minting NFTs</h3>
           <p>
-            Users can create (or mint) their own NFTs by converting digital files (art, music, collectibles, etc.) into unique tokens stored on the blockchain.
+            Users can create (or mint) their own NFTs by converting digital files (art, music, collectibles, etc.) into unique tokens stored on the blockchain and showcase your art to the world.
           </p>
         </div>
         <div className={Style.service_box_item}>
