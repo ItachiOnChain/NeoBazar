@@ -24,6 +24,7 @@ const Banner = ({ bannerImage }) => {
           alt="background"
           width={1600}
           height={300}
+          priority
         />
       </div>
     </div>

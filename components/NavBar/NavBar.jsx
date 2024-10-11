@@ -151,6 +151,7 @@ const NavBar = () => {
                 height={40}
                 onClick={() => openProfile()}
                 className={Style.navbar_container_right_profile}
+                priority
               />
 
               {profile && <Profile currentAccount={currentAccount} />}

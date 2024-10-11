@@ -14,6 +14,7 @@ const Service = () => {
             alt="Filter & Discover"
             width={100}
             height={100}
+            priority
           />
           <p className={Style.service_box_item_step}>
             <span>Service 1</span>
@@ -29,6 +30,7 @@ const Service = () => {
             alt="Filter & Discover"
             width={100}
             height={100}
+            priority
           />
           <p className={Style.service_box_item_step}>
             <span>Service 2</span>
@@ -44,6 +46,7 @@ const Service = () => {
             alt="Connect Wallet"
             width={100}
             height={100}
+            priority
           />
           <p className={Style.service_box_item_step}>
             <span>Service 3</span>
@@ -59,6 +62,7 @@ const Service = () => {
             alt="Filter & Discover"
             width={100}
             height={100}
+            priority
           />
           <p className={Style.service_box_item_step}>
             <span>Service 4</span>

@@ -17,6 +17,7 @@ const Notification = () => {
             width={50}
             height={50}
             className={Style.notification_box_img}
+            priority
           />
         </div>
         <div className={Style.notification_box_info}>

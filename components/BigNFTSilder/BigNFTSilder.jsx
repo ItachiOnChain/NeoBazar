@@ -162,6 +162,7 @@ const BigNFTSilder = () => {
                 alt="profile image"
                 width={50}
                 height={50}
+                priority
               />
               <div className={Style.bigNFTSlider_box_left_creator_profile_info}>
                 <p>Creator</p>
@@ -257,6 +258,7 @@ const BigNFTSilder = () => {
               src={sliderData[idNumber].nftImage}
               alt="NFT IMAGE"
               className={Style.bigNFTSlider_box_right_box_img}
+              priority
             />
 
             <div

@@ -174,6 +174,7 @@ const NFTDescription = ({ nft }) => {
                 width={40}
                 height={40}
                 className={Style.NFTDescription_box_profile_box_left_img}
+                priority
               />
               <div className={Style.NFTDescription_box_profile_box_left_info}>
                 <small>Creator</small> <br />
@@ -193,6 +194,7 @@ const NFTDescription = ({ nft }) => {
                 width={40}
                 height={40}
                 className={Style.NFTDescription_box_profile_box_left_img}
+                priority
               />
 
               <div className={Style.NFTDescription_box_profile_box_right_info}>

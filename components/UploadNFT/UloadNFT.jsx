@@ -141,6 +141,7 @@ const UloadNFT = ({ uploadToIPFS, createNFT, uploadToPinata }) => {
                       width={70}
                       height={70}
                       className={Style.upload_box_slider_box_img_img}
+                      priority
                     />
                   </div>
                   <div className={Style.upload_box_slider_box_img_icon}>

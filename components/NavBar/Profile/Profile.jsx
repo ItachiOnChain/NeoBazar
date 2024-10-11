@@ -19,6 +19,7 @@ const Profile = ({ currentAccount }) => {
           width={50}
           height={50}
           className={Style.profile_account_img}
+          priority
         />
 
         <div className={Style.profile_account_info}>

@@ -15,6 +15,7 @@ const NFTTabs = ({ dataTab, icon }) => {
             width={40}
             height={40}
             className={Style.NFTTabs_box_img}
+            priority
           />
           <div className={Style.NFTTabs_box_info}>
             <span>

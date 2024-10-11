@@ -21,6 +21,7 @@ const Error = () => {
             height={200}
             objectFit="cover"
             className={Style.Error_box_info_img}
+            priority
           />
           <p>{error}</p>
         </div>

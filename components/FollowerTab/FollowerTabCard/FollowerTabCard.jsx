@@ -33,6 +33,7 @@ const FollowerTabCard = ({ i, el }) => {
             width={500}
             height={300}
             objectFit="cover"
+            priority
           />
         </div>
 
@@ -43,6 +44,7 @@ const FollowerTabCard = ({ i, el }) => {
             width={50}
             height={50}
             src={el.user || images[`user${i + 1}`]}
+            priority
           />
         </div>
 

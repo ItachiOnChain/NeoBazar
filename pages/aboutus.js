@@ -46,7 +46,7 @@ const aboutus = () => {
             </p>
           </div>
           <div className={Style.aboutus_box_hero_right}>
-            <Image src={images.hero2} />
+            <Image src={images.hero2} priority/>
           </div>
         </div>
 
@@ -69,6 +69,7 @@ const aboutus = () => {
                   width={500}
                   height={500}
                   className={Style.aboutus_box_founder_box_img_img}
+                  priority
                 />
                 <h3>{el.name}</h3>
                 <p>{el.position}</p>

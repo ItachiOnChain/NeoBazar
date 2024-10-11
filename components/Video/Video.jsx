@@ -23,6 +23,7 @@ const Video = () => {
               height={1080}
               objectFit="cover"
               className={Style.Video_box_frame_left_img}
+              priority
             />
           </div>
 

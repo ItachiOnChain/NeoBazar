@@ -23,6 +23,7 @@ const collectionProfile = () => {
             width={800}
             height={800}
             className={Style.collectionProfile_box_left_img}
+            priority
           />
 
           <div className={Style.collectionProfile_box_left_social}>

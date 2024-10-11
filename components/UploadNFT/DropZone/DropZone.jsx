@@ -50,6 +50,7 @@ const DropZone = ({
               height={100}
               objectFit="contain"
               className={Style.DropZone_box_input_img_img}
+              priority
             />
           </div>
           <p>{heading}</p>

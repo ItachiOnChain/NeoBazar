@@ -59,6 +59,7 @@ const AuthorProfileCard = ({ currentAccount }) => {
             alt="NFT IMAGES"
             width={220}
             height={220}
+            priority
           />
         </div>
 
