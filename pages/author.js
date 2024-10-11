@@ -2,15 +2,15 @@ import React, { useState, useEffect, useContext } from "react";
 
 //INTERNAL IMPORT
 import Style from "../styles/author.module.css";
-import { Banner, NFTCardTwo } from "../collectionPage/collectionIndex";
+import { Banner, NFTCardTwo } from "../components/collectionPage/collectionIndex";
 import { Title } from "../components/componentsindex";
 import FollowerTabCard from "../components/FollowerTab/FollowerTabCard/FollowerTabCard";
-import images from "../img";
+import images from "../public/img";
 import {
   AuthorProfileCard,
   AuthorTaps,
   AuthorNFTCardBox,
-} from "../authorPage/componentIndex";
+} from "../components/authorPage/componentIndex";
 
 //IMPORT SMART CONTRACT DATA
 import { NFTMarketplaceContext } from "../Context/NFTMarketplaceContext";

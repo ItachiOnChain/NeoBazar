@@ -3,11 +3,11 @@ import React, { useEffect, useState, useContext } from "react";
 //INTRNAL IMPORT
 import Style from "../styles/searchPage.module.css";
 import { Loader } from "../components/componentsindex";
-import { SearchBar } from "../SearchPage/searchBarIndex";
+import { SearchBar } from "../components/SearchPage/searchBarIndex";
 import { Filter } from "../components/componentsindex";
 
-import { NFTCardTwo, Banner } from "../collectionPage/collectionIndex";
-import images from "../img";
+import { NFTCardTwo, Banner } from "../components/collectionPage/collectionIndex";
+import images from "../public/img";
 
 //SMART CONTRACT IMPORT
 import { NFTMarketplaceContext } from "../Context/NFTMarketplaceContext";

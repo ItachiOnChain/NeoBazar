@@ -2,10 +2,9 @@ import React, { useState } from "react";
 
 //INTERNAL IMPORT
 import Style from "./AuthorNFTCardBox.module.css";
-import images from "../../img";
+import images from "../../../public/img";
 import { NFTCardTwo } from "../../collectionPage/collectionIndex";
-import FollowerTabCard from "../../components/FollowerTab/FollowerTabCard/FollowerTabCard";
-import { Loader } from "../../components/componentsindex";
+import FollowerTabCard from "../../FollowerTab/FollowerTabCard/FollowerTabCard";
 
 const AuthorNFTCardBox = ({
   collectiables,

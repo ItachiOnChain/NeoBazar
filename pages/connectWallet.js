@@ -3,7 +3,7 @@ import Image from "next/image";
 
 //INTERNAL IMPORT
 import Style from "../styles/connectWallet.module.css";
-import images from "../img";
+import images from "../public/img";
 
 //IMPORT FROM SMART CONTRACT
 import { NFTMarketplaceContext } from "../Context/NFTMarketplaceContext";
@@ -33,15 +33,14 @@ const connectWallet = () => {
       <div className={Style.connectWallet_box}>
         <h1>Connect your wallet</h1>
         <p className={Style.connectWallet_box_para}>
-          Connect with one of our avaliabl wallet providers or create a new one
+          Connect with one of our available wallet providers or create a new one!
         </p>
 
         <div className={Style.connectWallet_box_provider}>
           {providerArray.map((el, i) => (
             <div
-              className={`${Style.connectWallet_box_provider_item} ${
-                activeBtn == i + 1 ? Style.active : ""
-              }`}
+              className={`${Style.connectWallet_box_provider_item} ${activeBtn == i + 1 ? Style.active : ""
+                }`}
               key={i + 1}
               onClick={() => (setActiveBtn(i + 1), connectWallet())}
             >

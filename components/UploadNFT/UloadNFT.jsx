@@ -77,7 +77,7 @@ const UloadNFT = ({ uploadToIPFS, createNFT, uploadToPinata }) => {
           <label htmlFor="nft">Item Name</label>
           <input
             type="text"
-            placeholder="shoaib bhai"
+            placeholder="Itachi's PFP"
             className={formStyle.Form_box_input_userName}
             onChange={(e) => setName(e.target.value)}
           />
@@ -92,15 +92,13 @@ const UloadNFT = ({ uploadToIPFS, createNFT, uploadToPinata }) => {
 
             <input
               type="text"
-              placeholder="website"
+              placeholder="Website URL"
               onChange={(e) => setWebsite(e.target.value)}
             />
           </div>
 
           <p className={Style.upload_box_input_para}>
-            Ciscrypt will include a link to this URL on this item's detail page,
-            so that users can click to learn more about it. You are welcome to
-            link to your own webpage with more details.
+            This URL will be displayed on the item's detail page.
           </p>
         </div>
 
@@ -111,12 +109,12 @@ const UloadNFT = ({ uploadToIPFS, createNFT, uploadToPinata }) => {
             id=""
             cols="30"
             rows="6"
-            placeholder="something about yourself in few words"
+            placeholder="A few lines about your NFT..."
             onChange={(e) => setDescription(e.target.value)}
           ></textarea>
           <p>
-            The description will be included on the item's detail page
-            underneath its image. Markdown syntax is supported.
+            The description will appear below the item's image on the detail
+            page. Markdown syntax is supported!
           </p>
         </div>
 
