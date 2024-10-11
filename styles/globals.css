@@ -20,7 +20,7 @@
 } */
 
 /* //THEME 11 */
-/* :root{
+:root{
   --icons-color: #fff;
   --icons-light-color: #fff57;
   --icons-bg-color: #fff;
@@ -34,10 +34,10 @@
 
   --box-shadow-2:1px 1px 2px #8f2c2c,
   -1px -1px 2px #c13c3c;
-} */
+}
 
 /* //THEME 2 */
-:root {
+/* :root {
   --icons-color: #ffdf2b;
   --icons-light-color: #ffdf2b57;
   --icons-bg-color: #ffdf2b;
@@ -50,7 +50,7 @@
   --box-shadow: 1px 1px 2px #ffdf2b, -1px -1px 2px #ffdf2b;
 
   --box-shadow-2: 1px 1px 2px #ffdf2b, -1px -1px 2px #ffdf2b;
-}
+} */
 
 /* //THEME 3 */
 /* :root{

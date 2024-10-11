@@ -2,7 +2,7 @@ import React, { useEffect, useState, useContext } from "react";
 import { useRouter } from "next/router";
 
 //INTERNAL IMPORT
-import { Button,  Brand } from "../components/componentsindex";
+import { Button} from "../components/componentsindex";
 import NFTDetailsPage from "../NFTDetailsPage/NFTDetailsPage";
 
 //IMPORT SMART CONTRACT DATA
@@ -28,7 +28,6 @@ const NFTDetails = () => {
   return (
     <div>
       <NFTDetailsPage nft={nft} />
-      <Brand />
     </div>
   );
 };

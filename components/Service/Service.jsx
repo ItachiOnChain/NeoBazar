@@ -16,12 +16,11 @@ const Service = () => {
             height={100}
           />
           <p className={Style.service_box_item_step}>
-            <span>Step 1</span>
+            <span>Service 1</span>
           </p>
-          <h3>Filter & Discover</h3>
+          <h3>Minting NFTs</h3>
           <p>
-            Connect with wallet, discover, buy NTFs, sell your NFTs and earn
-            money
+            Users can create (or mint) their own NFTs by converting digital files (art, music, collectibles, etc.) into unique tokens stored on the blockchain.
           </p>
         </div>
         <div className={Style.service_box_item}>
@@ -32,12 +31,11 @@ const Service = () => {
             height={100}
           />
           <p className={Style.service_box_item_step}>
-            <span>Step 1</span>
+            <span>Service 2</span>
           </p>
-          <h3>Filter & Discover</h3>
+          <h3>Buying and Selling</h3>
           <p>
-            Connect with wallet, discover, buy NTFs, sell your NFTs and earn
-            money
+            The marketplace facilitates the buying and selling of NFTs through auctions or direct sales, enabling seamless transactions between collectors and creators.
           </p>
         </div>
         <div className={Style.service_box_item}>
@@ -48,12 +46,11 @@ const Service = () => {
             height={100}
           />
           <p className={Style.service_box_item_step}>
-            <span>Step 1</span>
+            <span>Service 3</span>
           </p>
-          <h3>Connect Wallet</h3>
+          <h3>Discovering and Browsing</h3>
           <p>
-            Connect with wallet, discover, buy NTFs, sell your NFTs and earn
-            money
+            Users can explore a wide range of NFTs, organized by categories, popularity, and trending collections, providing easy discovery of digital assets.
           </p>
         </div>
         <div className={Style.service_box_item}>
@@ -64,12 +61,11 @@ const Service = () => {
             height={100}
           />
           <p className={Style.service_box_item_step}>
-            <span>Step 1</span>
+            <span>Service 4</span>
           </p>
-          <h3>Start trading</h3>
+          <h3>Wallet Integration and Management</h3>
           <p>
-            Connect with wallet, discover, buy NTFs, sell your NFTs and earn
-            money
+          The platform integrates with crypto wallets, allowing users to securely manage, store, and transfer their NFTs and cryptocurrency directly through the marketplace.
           </p>
         </div>
       </div>

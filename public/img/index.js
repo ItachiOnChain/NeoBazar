@@ -57,8 +57,10 @@ import loader from "./loadergif.gif";
 import errorgif from "./error.gif";
 import transfer from "./transfer.gif";
 import transferEther from "./ethereTransfer.gif";
+import itachi from "./itachi.png";
 
 export default {
+  itachi,
   hero2,
   founder1,
   founder2,

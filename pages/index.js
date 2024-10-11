@@ -6,12 +6,10 @@ import {
   HeroSection,
   Service,
   BigNFTSilder,
-  Subscribe,
   Title,
   Filter,
   NFTCard,
   FollowerTab,
-  Brand,
   Video,
   Loader,
 } from "../components/componentsindex";
@@ -64,8 +62,6 @@ const Home = () => {
       <Filter />
       {nfts.length === 0 ? <Loader /> : <NFTCard NFTData={nfts} />}
 
-      <Subscribe />
-      <Brand />
       <Video />
     </div>
   );
