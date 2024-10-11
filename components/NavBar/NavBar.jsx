@@ -34,7 +34,7 @@ const NavBar = () => {
       setHelp(false);
       setNotification(false);
       setProfile(false);
-    } else if (btnText == "Help Center") {
+    } else if (btnText == "More") {
       setDiscover(false);
       setHelp(true);
       setNotification(false);
@@ -111,7 +111,7 @@ const NavBar = () => {
 
           {/* HELP CENTER MENU */}
           <div className={Style.navbar_container_right_help}>
-            <p onClick={(e) => openMenu(e)}>Help Center</p>
+            <p onClick={(e) => openMenu(e)}>More</p>
             {help && (
               <div className={Style.navbar_container_right_help_box}>
                 <HelpCenter />

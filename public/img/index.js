@@ -58,8 +58,10 @@ import errorgif from "./error.gif";
 import transfer from "./transfer.gif";
 import transferEther from "./ethereTransfer.gif";
 import itachi from "./itachi.png";
+import Aditya from "./Aditya.png";
 
 export default {
+  Aditya,
   itachi,
   hero2,
   founder1,

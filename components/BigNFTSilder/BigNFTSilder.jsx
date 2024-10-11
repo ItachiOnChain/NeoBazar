@@ -11,13 +11,16 @@ import Button from "../Button/Button";
 
 const BigNFTSilder = () => {
   const [idNumber, setIdNumber] = useState(0);
+  const [like, setLike] = useState(false);
+  const [remainingTime, setRemainingTime] = useState({});
+  const [likeCount, setLikeCount] = useState(0);
 
   const sliderData = [
     {
       title: "Hello NFT",
       id: 1,
-      name: "Daulat Hussain",
-      collection: "GYm",
+      name: "Itachi Uchiha",
+      collection: "Gym",
       price: "00664 ETH",
       like: 243,
       image: images.user1,
@@ -32,10 +35,10 @@ const BigNFTSilder = () => {
     {
       title: "Buddy NFT",
       id: 2,
-      name: "Shoaib Hussain",
+      name: "Aditi Gupta",
       collection: "Home",
       price: "0000004 ETH",
-      like: 243,
+      like: 293,
       image: images.user2,
       nftImage: images.nft_image_2,
       time: {
@@ -46,12 +49,12 @@ const BigNFTSilder = () => {
       },
     },
     {
-      title: "Gym NFT",
+      title: "Stud NFT",
       id: 3,
-      name: "Raayan Hussain",
-      collection: "GYm",
+      name: "Manisha Kumari Barnwal",
+      collection: "Cool",
       price: "0000064 ETH",
-      like: 243,
+      like: 223,
       image: images.user3,
       nftImage: images.nft_image_3,
       time: {
@@ -62,12 +65,12 @@ const BigNFTSilder = () => {
       },
     },
     {
-      title: "Home NFT",
+      title: "Gym NFT",
       id: 4,
-      name: "Raayan Hussain",
-      collection: "GYm",
+      name: "Kirti Garg",
+      collection: "Gym",
       price: "4664 ETH",
-      like: 243,
+      like: 143,
       image: images.user4,
       nftImage: images.nft_image_1,
       time: {
@@ -79,14 +82,67 @@ const BigNFTSilder = () => {
     },
   ];
 
-  //-------INC
+  // Helper function to calculate remaining time
+  const calculateRemainingTime = (time) => {
+    const totalSeconds =
+      time.days * 24 * 3600 + time.hours * 3600 + time.minutes * 60 + time.seconds;
+    return totalSeconds;
+  };
+
+  // Countdown timer setup
+  useEffect(() => {
+    const initialTime = calculateRemainingTime(sliderData[idNumber].time);
+    setRemainingTime(sliderData[idNumber].time);
+
+    const interval = setInterval(() => {
+      setRemainingTime((prevTime) => {
+        const totalSeconds =
+          prevTime.days * 24 * 3600 +
+          prevTime.hours * 3600 +
+          prevTime.minutes * 60 +
+          prevTime.seconds -
+          1;
+
+        if (totalSeconds <= 0) {
+          clearInterval(interval);
+          return { days: 0, hours: 0, minutes: 0, seconds: 0 };
+        }
+
+        const days = Math.floor(totalSeconds / (24 * 3600));
+        const hours = Math.floor((totalSeconds % (24 * 3600)) / 3600);
+        const minutes = Math.floor((totalSeconds % 3600) / 60);
+        const seconds = Math.floor(totalSeconds % 60);
+
+        return { days, hours, minutes, seconds };
+      });
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, [idNumber]);
+
+  // Handle Like/Unlike
+  useEffect(() => {
+    setLikeCount(sliderData[idNumber].like); // Reset like count when the slider changes
+    setLike(false); // Reset like state when the slider changes
+  }, [idNumber]);
+
+  const toggleLike = () => {
+    if (like) {
+      setLikeCount(likeCount - 1);
+    } else {
+      setLikeCount(likeCount + 1);
+    }
+    setLike(!like);
+  };
+
+  //-------Increment Slide
   const inc = useCallback(() => {
     if (idNumber + 1 < sliderData.length) {
       setIdNumber(idNumber + 1);
     }
   }, [idNumber, sliderData.length]);
 
-  //-------DEC
+  //-------Decrement Slide
   const dec = useCallback(() => {
     if (idNumber > 0) {
       setIdNumber(idNumber - 1);
@@ -151,28 +207,28 @@ const BigNFTSilder = () => {
               <div
                 className={Style.bigNFTSlider_box_left_bidding_box_timer_item}
               >
-                <p>{sliderData[idNumber].time.days}</p>
+                <p>{remainingTime.days}</p>
                 <span>Days</span>
               </div>
 
               <div
                 className={Style.bigNFTSlider_box_left_bidding_box_timer_item}
               >
-                <p>{sliderData[idNumber].time.hours}</p>
+                <p>{remainingTime.hours}</p>
                 <span>Hours</span>
               </div>
 
               <div
                 className={Style.bigNFTSlider_box_left_bidding_box_timer_item}
               >
-                <p>{sliderData[idNumber].time.minutes}</p>
+                <p>{remainingTime.minutes}</p>
                 <span>mins</span>
               </div>
 
               <div
                 className={Style.bigNFTSlider_box_left_bidding_box_timer_item}
               >
-                <p>{sliderData[idNumber].time.seconds}</p>
+                <p>{remainingTime.seconds}</p>
                 <span>secs</span>
               </div>
             </div>
@@ -203,9 +259,12 @@ const BigNFTSilder = () => {
               className={Style.bigNFTSlider_box_right_box_img}
             />
 
-            <div className={Style.bigNFTSlider_box_right_box_like}>
-              <AiFillHeart />
-              <span>{sliderData[idNumber].like}</span>
+            <div
+              className={Style.bigNFTSlider_box_right_box_like}
+              onClick={toggleLike}
+            >
+              {like ? <AiFillHeart style={{ color: "red" }} /> : <AiOutlineHeart />}
+              <span>{likeCount}</span>
             </div>
           </div>
         </div>

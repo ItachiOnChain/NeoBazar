@@ -10,7 +10,7 @@ import { HiOutlineMail } from "react-icons/hi";
 
 //INTERNAL IMPORT
 import Style from "../styles/contactus.module.css";
-import formStyle from "../AccountPage/Form/Form.module.css";
+import formStyle from "../components/AccountPage/Form/Form.module.css";
 import { Button } from "../components/componentsindex";
 
 const contactus = () => {
@@ -23,17 +23,16 @@ const contactus = () => {
             <div className={Style.contactus_box_box_left_item}>
               <h3>🗺 ADDRESS</h3>
               <p>
-                Photo booth tattooed prism, portland taiyaki hoodie neutra
-                typewriter
+                Delhi, India
               </p>
             </div>
             <div className={Style.contactus_box_box_left_item}>
               <h3>💌 EMAIL</h3>
-              <p>nc.example@example.com</p>
+              <p>uchihaweb3@gmail.com</p>
             </div>
             <div className={Style.contactus_box_box_left_item}>
               <h3>☎ PHONE</h3>
-              <p>000-123-456-7890</p>
+              <p>+918178287557</p>
             </div>
             <div className={Style.contactus_box_box_left_item}>
               <h3>🌏 SOCIALS</h3>
@@ -60,7 +59,7 @@ const contactus = () => {
                 <label htmlFor="name">Full Name</label>
                 <input
                   type="text"
-                  placeholder="shoaib bhai"
+                  placeholder="Your Name*"
                   className={formStyle.Form_box_input_userName}
                 />
               </div>

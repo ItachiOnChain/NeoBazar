@@ -2,12 +2,12 @@ import React from "react";
 
 //INTERNAL IMPORT
 import Style from "../styles/collection.module.css";
-import images from "../img";
+import images from "../public/img";
 import {
   Banner,
   CollectionProfile,
   NFTCardTwo,
-} from "../collectionPage/collectionIndex";
+} from "../components/collectionPage/collectionIndex";
 import Filter from "../components/Filter/Filter";
 
 const collection = () => {

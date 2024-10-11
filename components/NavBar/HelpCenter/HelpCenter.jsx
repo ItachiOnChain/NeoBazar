@@ -14,18 +14,8 @@ const HelpCenter = () => {
       name: "Contact Us",
       link: "contactus",
     },
-    {
-      name: "Sign Up",
-      link: "signUp",
-    },
-    {
-      name: "LogIn",
-      link: "login",
-    },
-    {
-      name: "Subscription",
-      link: "subscription",
-    },
+    
+    
   ];
   return (
     <div className={Style.box}>

@@ -72,18 +72,6 @@ const SideBar = ({ setOpenSideMenu, currentAccount, connectWallet }) => {
       name: "Contact Us",
       link: "contactus",
     },
-    {
-      name: "Sign Up",
-      link: "signUp",
-    },
-    {
-      name: "LogIn",
-      link: "login",
-    },
-    {
-      name: "Subscription",
-      link: "subscription",
-    },
   ];
 
   const openDiscoverMenu = () => {
@@ -169,7 +157,7 @@ const SideBar = ({ setOpenSideMenu, currentAccount, connectWallet }) => {
             className={Style.sideBar_menu_box}
             onClick={() => openHelpMenu()}
           >
-            <p>Help Center</p>
+            <p>More</p>
             <TiArrowSortedDown />
           </div>
 

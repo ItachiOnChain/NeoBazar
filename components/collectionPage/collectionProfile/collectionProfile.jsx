@@ -9,7 +9,7 @@ import {
 
 //INTERNAL IMPORT
 import Style from "./collectionProfile.module.css";
-import images from "../../img";
+import images from "../../../public/img";
 
 const collectionProfile = () => {
   const cardArray = [1, 2, 3, 4];

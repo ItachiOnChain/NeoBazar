@@ -3,44 +3,35 @@ import Image from "next/image";
 
 //INTERNAL IMPORT
 import Style from "../styles/aboutus.module.css";
-import images from "../img";
+import images from "../public/img";
 
 const aboutus = () => {
   const founderArray = [
     {
-      name: "Niamh O'Shea",
-      position: "Co-founder and Chief Executive",
-      images: images.founder1,
+      name: "Itachi Uchiha",
+      position: "Full Stack Blockchain Developer",
+      images: images.itachi,
     },
     {
-      name: "Danien Jame",
-      position: "Co-founder and Chief Executive",
-      images: images.founder2,
+      name: "Aditya Gupta",
+      position: "UIUX Designer & Frontend Developer",
+      images: images.Aditya,
     },
-    {
-      name: "Orla Dwyer",
-      position: "Co-founder, Chairman",
-      images: images.founder3,
-    },
-    {
-      name: "Dara Frazier",
-      position: "Co-Founder, Chief Strategy Officer",
-      images: images.founder4,
-    },
+    
   ];
 
   const factsArray = [
     {
-      title: "10 million",
-      info: "Articles have been public around the world (as of Sept. 30, 2021)",
+      title: "Advocate",
+      info: "We are working as a Developer Advocate at HackQuest right now, and prev. worked at Avocado Wallet, and Push Protocol etc.",
     },
     {
-      title: "100,000",
-      info: "Registered users account (as of Sept. 30, 2021)",
+      title: "DevRel Uni",
+      info: "We are also a Devrel Uni cohort 5 graduate :)",
     },
     {
-      title: "220+",
-      info: "Countries and regions have our presence (as of Sept. 30, 2021",
+      title: "Angel Hacks",
+      info: "Apart fro this we have been part of the angel hacks community builder program :)",
     },
   ];
   return (
@@ -50,9 +41,8 @@ const aboutus = () => {
           <div className={Style.aboutus_box_hero_left}>
             <h1>👋 About Us.</h1>
             <p>
-              We’re impartial and independent, and every day we create
-              distinctive, world-class programmes and content which inform,
-              educate and entertain millions of people in the around the world.
+              We specialize in multiple programming languages, frameworks, and tools,
+              enabling me to build robust, scalable decentralized applications and conduct thorough smart contract audits.
             </p>
           </div>
           <div className={Style.aboutus_box_hero_right}>
@@ -63,8 +53,9 @@ const aboutus = () => {
         <div className={Style.aboutus_box_title}>
           <h2>⛱ Founder</h2>
           <p>
-            We’re impartial and independent, and every day we create
-            distinctive, world-class programmes and content
+          We love solving problems and bringing ideas to life through code. 
+          Programming is more than just our profession—it's our passion. 
+          We thrive on exploring new technologies and continuously sharpening my skills.
           </p>
         </div>
 
@@ -87,10 +78,9 @@ const aboutus = () => {
         </div>
 
         <div className={Style.aboutus_box_title}>
-          <h2>🚀 Fast Facts</h2>
+          <h2>🚀 Few more Facts about us :)</h2>
           <p>
-            We’re impartial and independent, and every day we create
-            distinctive, world-class programmes and content
+            We are not just developers but also strong community builders.
           </p>
         </div>
 
