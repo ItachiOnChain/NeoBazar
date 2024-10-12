@@ -198,6 +198,7 @@ export const NFTMarketplaceProvider = ({ children }) => {
   const fetchNFTs = async () => {
     try {
       const address = await checkIfWalletConnected();
+      console.log("Address after connected wallet: ", address);
       if (address) {
         const web3Modal = new Web3Modal();
         const connection = await web3Modal.connect();
